@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}User Profile{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>User Profile</h1>
+        <div class="profile-info">
+            <p><strong>Name:</strong> Ahmed SKR</p>
+            <p><strong>Location:</strong> Cairo City</p>
+            <p><strong>Email:</strong> ahmedskr2027@gmail.com</p>
+            <p><strong>Bio:</strong> Backend Developer with a passion for creating robust and scalable web applications.</p>
+        </div>
+        <a href="{% url 'job_list' %}" class="btn">Back to Job List</a>
+    </div>
+{% endblock %}

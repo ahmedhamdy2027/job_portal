@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Post a Job{% endblock %}
+
+{% block content %}
+    <h1>Post a Job</h1>
+    <form method="post" style="max-width: 600px; margin: auto;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" style="background-color: #333; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Post Job</button>
+    </form>
+{% endblock %}
